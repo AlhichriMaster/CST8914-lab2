@@ -4,17 +4,28 @@
    <title>Question 2 - CSS</title>
    <style>
     .mainsection a {
-      text-decoration: none;
-      color: #414040;
+      text-decoration: underline;
+      color: #0066cc;;
       outline: none;
     }
 
-    
+    .mainsection a:focus {
+      outline: 3px solid #000000;
+      outline-offset: 2px;
+      background-color: #ffff00;
+    }
+
+    .mainsection a:hover {
+      background-color: #e6f2ff;
+      color: #003d7a;
+    }
     </style>
 </head>
+
+
 <body>
 <div class="mainsection">
-<h1><img src="lab2/lab2-imageoftext.gif" alt="Shopping categories"></h1>
+<h1>Shopping Categories</h1>
 
 <ul>
   <li><a href="#">Animals</a></li>
@@ -25,6 +36,5 @@
   <li><a href="#">Music</a></li>
 </ul>
 </div>    
-
 </body>
 </html>
